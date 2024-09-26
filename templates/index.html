@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twilio Call Bot</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Call Now</h1>
+        <form id="call-form">
+            <label for="phone-number">Enter Phone Number:</label>
+            <input type="text" id="phone-number" name="to_number" placeholder="+123456789" required>
+            <div class="call-controls">
+                <button type="submit" class="dialpad-button">Dial</button>
+                <button type="button" class="control-button" id="speaker">Speaker</button>
+                <button type="button" class="control-button" id="mute">Mute</button>
+                <button type="button" class="control-button" id="hold">Hold</button>
+            </div>
+        </form>
+        <p id="call-status"></p>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+                                     </html>
+                                     
