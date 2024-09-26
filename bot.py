@@ -1,8 +1,13 @@
 import telebot
+import os
+from dotenv import load_dotenv
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
+# Load environment variables
+load_dotenv()
+
 # Your Telegram Bot API Token
-API_TOKEN = '7650154311:AAEXzWOOdwWKU8sT7uJDi1S-dIrjyqR6WHA'
+API_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 
 # Initialize the bot
 bot = telebot.TeleBot(API_TOKEN)
@@ -23,4 +28,3 @@ def echo_message(message):
 
 # Polling for new messages
 bot.polling()
-  
